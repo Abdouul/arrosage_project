@@ -1,0 +1,14 @@
+{
+    "targets": {
+         "arrosage-43e17": {
+            "hosting": {
+                "arro": [
+                    "arrosage-43e17"
+                 ]
+             }
+    }
+},
+"projects": {
+    "default": "arrosage-43e17"
+}
+ }

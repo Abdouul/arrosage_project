@@ -77,6 +77,25 @@
           },
           "defaultConfiguration": "development"
         },
+
+        
+        "deploy":{
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version":2
+          },
+          "configurations": {
+            "production":{
+              "buildTarget":"arro:build:production",
+              "serveTarget":"arro:serve:production"
+            },
+            "development":{
+              "buildTarget":"arro:build:development",
+              "serveTarget":"arro:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
@@ -102,5 +121,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
